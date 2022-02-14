@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Rubik:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: 'Rubik', 'sans-serif';
+    font-weight: 300;
+    color: black
+}
+
+h1, h2 {
+    font-family: 'Anton', 'sans-serif';
+    text-transform: uppercase;
+    color: black;
+}
+
+#hero-image {
+    background: url('../images/john-fornander-TAZoUmDqzXk-unsplash\ \(1\).jpg') no-repeat center center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
