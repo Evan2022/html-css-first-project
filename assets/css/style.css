@@ -19,11 +19,16 @@ header {
     height: 60px;
 }
 
-h1, h2 {
+h1 {
     font-family: 'Anton', sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
     color: white;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 200%;
 }
 
 #logo {
@@ -56,16 +61,15 @@ h1, h2 {
     height: 600px;
     width: 100%;
     text-align: center;
-    position: relative;
 }
 
 /* want to add a border to Join today but not sizing correctly on right and bottom with it in ask mentor */
 #join-today-outer {
-    width: 300px;
+    width: 20%;
     height: 100px;
     background-color: rgba(244, 5, 5, .7);
+    margin: 500px 40% 0;
     position: absolute;
-    margin: 500px 40% 0 40%;
 
 }
 
@@ -79,5 +83,52 @@ h1, h2 {
 }
 
 #about {
-    height: 600px;
+    height: 800px;
+    text-align: center;
 }
+
+#facilities {
+    height: 400px;
+    width: 25%;
+    background-color: rgba(244, 5, 5, .7);
+    display: inline-block;
+    margin-right: 100px;
+    
+}
+
+#our-story {
+    height: 400px;
+    width: 25%;
+    background-color: rgba(244, 5, 5, .7);
+    display: inline-block;
+    margin-top: 200px;
+}
+
+#payment {
+    height: 400px;
+    width: 25%;
+    background-color: rgba(244, 5, 5, .7);
+    display: inline-block;
+    margin-left: 100px;
+
+}
+
+footer {
+    height: 60px;
+    width: 100%;
+    background-color: rgba(244, 5, 5, .7);
+    margin: 0;
+    text-align: center;
+}
+
+footer li  {
+    display: inline;
+}
+
+footer i {
+    font-size: 200%;
+    line-height: 60px;
+    margin: 14px 60px;
+    color: white;
+}
+
