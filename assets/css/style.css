@@ -7,20 +7,77 @@
 }
 
 body {
-    font-family: 'Rubik', 'sans-serif';
-    font-weight: 300;
-    color: black
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    background: url('../images/john-fornander-TAZoUmDqzXk-unsplash\ \(1\).jpg') no-repeat center center;
+    background-color: black;
+}
+
+header {
+    background-color: rgba(244, 5, 5, .7);
+    width: 100%;
+    height: 60px;
 }
 
 h1, h2 {
-    font-family: 'Anton', 'sans-serif';
+    font-family: 'Anton', sans-serif;
     text-transform: uppercase;
-    color: black;
+    letter-spacing: 3px;
+    color: white;
 }
 
-#hero-image {
-    background: url('../images/john-fornander-TAZoUmDqzXk-unsplash\ \(1\).jpg') no-repeat center center;
-    position: fixed;
+#logo {
+    float: left;
+    margin-left: 30px;
+    font-size: 250%;
+}
+
+#menu, #logo {
+    line-height: 60px;
+}
+
+#menu {
+    float: right;
+    font-size: 100%;
+}
+
+#menu li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+}
+
+#join-section {
+    height: 600px;
     width: 100%;
-    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+/* want to add a border to Join today but not sizing correctly on right and bottom with it in ask mentor */
+#join-today-outer {
+    width: 300px;
+    height: 100px;
+    background-color: rgba(244, 5, 5, .7);
+    position: absolute;
+    margin: 500px 40% 0 40%;
+
+}
+
+#join-today {
+    line-height: 100px;
+    font-size: 250%;
+    text-decoration: none;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 3px;
+    color: white;
+}
+
+#about {
+    height: 600px;
 }
