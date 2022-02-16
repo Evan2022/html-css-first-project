@@ -70,6 +70,7 @@ h2 {
     background-color: rgba(244, 5, 5, .7);
     margin: 500px 40% 0;
     position: absolute;
+    border-radius: 10px;
 
 }
 
@@ -131,4 +132,5 @@ footer i {
     margin: 14px 60px;
     color: white;
 }
+
 
