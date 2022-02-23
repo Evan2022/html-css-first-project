@@ -34,7 +34,7 @@
     </header>
     <section> 
             <!-- check if ok to use below link-->
-            <form action="https://formdump.codeinstitute.net" method="post" id="personal-info">
+            <form action="https://formdump.codeinstitute.net" method="post" class="submission-form">
 
                 <h2>Personal information:</h2>
                 <hr>
@@ -46,41 +46,35 @@
                     <!-- Check with mentor if there is a way to make sure email and confirm email match, also check if the labeling for confirm email is ok (email-field2)-->
                     <!-- Need to really check the labeling for this entire segment-->
                     <div>
-                        <label for="name-field1"></label>
-                        <input id="name-field1" type="text" name="first_name" placeholder="First Name*" required>
-                    </div>
-                    <div>
-                        <label for="name-field2"></label>
-                        <input id="name-field2" type="text" name="last_name" placeholder="Last Name*" required>
-                    </div>
+                        <label for="fname"></label>
+                        <input id="fname" type="text" name="first_name" placeholder="First Name*" class="input-medium" required>
+                
+                        <label for="lname"></label>
+                        <input id="lname" type="text" name="last_name" placeholder="Last Name*" class="input-medium" required>
+                    
                     <!-- Check to see if there is something we can use to make sure passwords and emails match-->
-                    <div>
-                        <label for="email-field1"></label>
-                        <input id="email-field1" type="email" name="email" placeholder="Your Email*" required>
-                    </div>
-                    <div>
-                        <label for="email-field2"></label>
-                        <input id="email-field2" type="email" name="email_2" placeholder="Confirm Email*" required>
-                    </div>
-                    <div>
+                        <label for="email"></label>
+                        <input id="email" type="email" name="email" placeholder="Email*" class="input-medium" required>
+
+                        <label for="email2"></label>
+                        <input id="email2" type="email" name="email" placeholder="Confirm Email*" class="input-medium" required>
+                
                         <label for="password1"></label>
-                        <input id="password1" type="password" name="password_1" placeholder="Password*">
-                    </div>
-                    <div>
+                        <input id="password1" type="password" name="password_1" placeholder="Password*" class="input-medium" required> 
+                    
                         <label for="password2"></label>
-                        <input id="password2" type="password" name="password_2" placeholder="Confirm Password*">
-                    </div>
-                    <div>
-                        <label for="date-of-birth"></label>
-                        <input id="date-of-birth" type="date" name="date_birth" required>
-                    </div>
-                    <div>
-                        <label for="phone-number-field"></label>
-                        <input id="phone-number-field" type="text" name="phone" placeholder="Phone No*" required>
-                    </div>
-                    <div>
+                        <input id="password2" type="password" name="password_2" placeholder="Confirm Password*" class="input-medium" required>
+                    
+                        <label for="birthday"></label>
+                        <input id="birthday" type="date" name="date_birth" class="input-medium" required>
+                    
+                        <label for="phone"></label>
+                        <input id="phone" type="tel" name="phone_number" placeholder="Phone No*" class="input-medium" required>
+                    
+                    <!-- Check if it is ok to leave in the selected option-->
                         <label for="gender-field"></label>
-                        <select id="gender-field" name="gender" required>
+                        <select id="gender-field" name="gender" class="input-small" required>
+                            <option value="gender" selected="selected">Gender*</option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
                         </select>
@@ -91,24 +85,20 @@
                     <legend>Address</legend>
                     <div>
                         <label for="address-field1"></label>
-                        <input id="address-field1" type="text" name="Address_line1" placeholder="Address Line 1*" required>
-                    </div>
-                    <div>
+                        <input id="address-field1" type="text" name="Address_line1" placeholder="Address Line 1*" class="input-large" required>
+                    
                         <label for="address-field2"></label>
-                        <input id="address-field2" type="text" name="Address_line2" placeholder="Address Line 2*" required>
-                    </div>
-                    <div>
+                        <input id="address-field2" type="text" name="Address_line2" placeholder="Address Line 2*" class="input-large">
+                   
                         <label for="city-field"></label>
-                        <input id="city-field" type="text" name="city_line" placeholder="City*" required>
-                    </div>
-                    <div>
+                        <input id="city-field" type="text" name="city_line" placeholder="City*" class="input-small" required>
+                    
                         <label for="eircode-postcode-field"></label>
-                        <input id ="eircode-postcode-field" type="text" name="eircode_postcode" placeholder="Eircode / Post Code*">
-                    </div>
+                        <input id ="eircode-postcode-field" type="text" name="eircode_postcode" placeholder="Eircode / Post Code*" class="input-small">
+        
                     <!-- Copy and pasted country list from https://www.technicalkeeda.com/html-tutorials/all-countries-drop-down-list-in-html need to note in the Project Readme-->
-                    <div>
                         <label for="country-field"></label>
-                        <select id="country-field" name="country">
+                        <select id="country-field" name="country" class="input-small">
                             <option value="Ireland" selected="selected">Ireland</option>
                             <option value="Afganistan">Afghanistan</option>
                             <option value="Albania">Albania</option>
@@ -363,28 +353,24 @@
                     <legend>Payment Details</legend>
                     <div>
                         <label for="card-name"></label>
-                        <input id="card-name" type="text" name="card_name" placeholder="Card Name*" required>
-                    </div>          
-                    <div>
+                        <input id="card-name" type="text" name="card_name" placeholder="Card Name*" class="input-large" required>
+                    
                         <label for="card-type"></label>
-                        <select id="card-type" name="card_type">
+                        <select id="card-type" name="card_type" class="input-small">
                             <option value="">--Please choose an option--</option>
                             <option value="mastercard">Mastercard</option>
                             <option value="visa">Visa</option>
                         </select>
-                    </div>      
-                    <div>
+                   
                         <label for="card-number"></label>
-                        <input id="card-number" type="text" name="card_number" placeholder="Card Number*" required>
-                    </div>
-                    <div>
+                        <input id="card-number" type="text" name="card_number" placeholder="Card Number*" class="input-small" required>
+                   
                         <label for="CVN"></label>
-                        <input id="CVN" type="text" name="CVN" placeholder="CVN" required>
-                    </div>
+                        <input id="CVN" type="text" name="CVN" placeholder="CVN" class="input-small" required>
+                
                     <!-- Run this by mentor and see if the month/year placeholder text is ok leaving empty "" at option 1-->
-                    <div>
                         <label for="expiry-month"></label>
-                        <select id="expiry-month" name="expiry_month" required>
+                        <select id="expiry-month" name="expiry_month" class="input-small" required>
                             <option value="">Month</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -400,7 +386,7 @@
                             <option value="12">12</option>
                         </select>
                         <label for="expiry-year"></label>
-                        <select id="expiry-year" name="expiry_year" required>
+                        <select id="expiry-year" name="expiry_year" class="input-small" required>
                             <option value="">Year</option>
                             <option value="2022">2022</option>
                             <option value="2023">2023</option>

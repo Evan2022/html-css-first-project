@@ -9,7 +9,6 @@
 body {
     font-family: 'Rubik', sans-serif;
     color: white;
-    background: url('../images/john-fornander-TAZoUmDqzXk-unsplash\ \(1\).jpg') no-repeat center center;
     background-color: black;
 }
 
@@ -20,7 +19,6 @@ header {
 }
 
 h1 {
-    font-family: 'Anton', sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
     color: white;
@@ -28,7 +26,7 @@ h1 {
 
 h2 {
     text-transform: uppercase;
-    font-size: 200%;
+    font-size: 175%;
 }
 
 #logo {
@@ -61,25 +59,24 @@ h2 {
     height: 600px;
     width: 100%;
     text-align: center;
+    background: url('../images/john-fornander-TAZoUmDqzXk-unsplash\ \(1\).jpg') no-repeat center center;
 }
 
 /* want to add a border to Join today but not sizing correctly on right and bottom with it in ask mentor */
 #join-today-outer {
     width: 20%;
-    height: 100px;
+    height: 60px;
     background-color: rgba(244, 5, 5, .7);
-    margin: 500px 40% 0;
-    position: absolute;
     border-radius: 10px;
+    margin: 350px 0 0 200px;
+    position: absolute;
 
 }
 
 #join-today {
-    line-height: 100px;
+    line-height: 60px;
     font-size: 250%;
     text-decoration: none;
-    font-family: 'Anton', sans-serif;
-    letter-spacing: 3px;
     color: white;
 }
 
@@ -94,6 +91,43 @@ h2 {
     background-color: rgba(244, 5, 5, .7);
     display: inline-block;
     margin: 200px 50px;
+}
+
+.submission-form {
+    width: 1000px;
+    margin: 60px auto;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, .7);
+    text-align: center;
+
+}
+
+/* Check to see why the select options are -10px thinner than the other input options */
+
+#birthday {
+    text-transform: uppercase;
+}
+
+.input-small {
+    width: 300px;
+    font-size: 100%;
+    padding: 5px;
+    margin: 5px;
+}
+
+.input-medium {
+    width: 455px;
+    font-size: 100%;
+    padding: 5px;
+    margin: 5px;
+
+}
+
+.input-large {
+    width: 940px;
+    font-size: 100%;
+    padding: 5px;
+    margin: 5px;
 }
 
 footer {
