@@ -102,11 +102,24 @@ h2 {
 
 }
 
-/* Check to see why the select options are -10px thinner than the other input options */
+#form-heading {
+    margin-bottom: 10px;
+    padding: 5px;
+    text-transform: uppercase;
+    background-color: rgba(244, 5, 5, .7);
+}
+
+.form-divs {
+    clear: both;
+    margin: 20px 0;
+    padding: 5px;
+}
 
 #birthday {
     text-transform: uppercase;
 }
+
+/* Check to see why the select options are -10px thinner than the other input options */
 
 .input-small {
     width: 300px;
@@ -128,6 +141,41 @@ h2 {
     font-size: 100%;
     padding: 5px;
     margin: 5px;
+}
+
+legend {
+    text-transform: uppercase;
+    float: left;
+    margin: 5px 0 5px 25px;
+
+}
+
+#terms-conditions {
+    height: 500px;
+    overflow-y: scroll;
+    clear: both;
+    margin: 20px 25px;
+    padding: 5px;
+    border: 1px solid white;
+    text-align: left;
+}
+
+#terms-conditions ul {
+    margin: 20px;
+
+}
+
+
+#submit-button {
+    font-size: 100%;
+    padding: 5px;
+    float: left;
+    margin: 5px 0 5px 25px;
+    background-color: rgba(244, 5, 5, .7);
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+
 }
 
 footer {
