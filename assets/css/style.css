@@ -10,6 +10,7 @@ body {
     font-family: 'Rubik', sans-serif;
     color: white;
     background-color: black;
+    font-size: 16px;
 }
 
 header {
@@ -28,14 +29,16 @@ h1 {
 h2 {
     font-family: 'Russo One', sans-serif;
     text-transform: uppercase;
-    font-size: 150%;
+    font-size: 2rem;
     letter-spacing: 3px;
+
 }
 
 #logo {
     float: left;
-    margin-left: 30px;
+    margin-left: 3rem;
     font-size: 250%;
+    font-style: italic;
 }
 
 #menu, #logo {
@@ -50,7 +53,7 @@ h2 {
 #menu li {
     list-style-type: none;
     display: inline-block;
-    margin-right: 30px;
+    margin-right: 3rem;
 }
 
 #menu a {
@@ -59,29 +62,12 @@ h2 {
 }
 
 #join-section {
-    height: 860px;
+    height: 100vh;
     width: 100%;
-    text-align: center;
-    background: url('../images/john-fornander-TAZoUmDqzXk-unsplash\ \(1\).jpg') no-repeat center center;
-}
-
-/* want to add a border to Join today but not sizing correctly on right and bottom with it in ask mentor */
-#join-today-outer {
-    width: 300px;
-    height: 60px;
-    background-color: rgba(244, 5, 5, .7);
-    border-radius: 10px;
-    margin: 430px 0 0 200px;
-    position: absolute;
+    background: url('../images/pexels-jonathan-borba-3076514.jpg') no-repeat left 35% top;
 
 }
 
-#join-today {
-    line-height: 60px;
-    font-size: 250%;
-    text-decoration: none;
-    color: white;
-}
 
 /* Double check the facilities section CSS to see if it is done ok */
 
