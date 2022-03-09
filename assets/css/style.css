@@ -21,13 +21,6 @@ header {
     height: 60px;
 }
 
-h1 {
-    font-family: 'Russo One', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: white;
-}
-
 h2 {
     font-family: 'Russo One', sans-serif;
     text-transform: uppercase;
@@ -40,10 +33,14 @@ h2 {
 /* Nav Menu */
 
 #logo {
+    font-family: 'Russo One', sans-serif;
     float: left;
     margin-left: 3rem;
     font-size: 2.5rem;
     font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: white;
 }
 
 #menu, #logo {
@@ -52,7 +49,6 @@ h2 {
 
 #menu {
     float: right;
-    font-size: 100%;
 }
 
 #menu li {
@@ -64,6 +60,7 @@ h2 {
 #menu a {
     text-decoration: none;
     color: white;
+    padding: 0.5rem;
 }
 
 /*Hero Image section */
@@ -93,12 +90,11 @@ h2 {
 .join a {
     text-decoration: none;
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
-    background-color: rgba(244, 5, 5, .7);
     border-radius: 1rem;
     border: 2px solid white;
-    padding: 0.5rem;
+    padding: 0.75rem;
 }
 
 /* Facilities Section */
@@ -131,6 +127,11 @@ h2 {
     text-transform: uppercase;
 }
 
+.facilities-sections i {
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
 
 
 /* Submission Form Section */
@@ -141,12 +142,11 @@ h2 {
 }
 
 .submission-form {
-    width: 1000px;
-    margin: 60px auto;
+    max-width: 1000px;
+    margin: 4rem auto;
     border: 2px solid white;
     background-color: rgba(0, 0, 0, .7);
     text-align: center;
-
 }
 
 #form-heading {
@@ -157,63 +157,52 @@ h2 {
 }
 
 .form-divs {
+    justify-content: center;
     clear: both;
-    margin: 20px 0;
-    padding: 5px;
+
 }
 
-#birthday {
-    text-transform: uppercase;
-}
-
-/* Check to see why the select options are -10px thinner than the other input options */
-
-.input-small {
-    width: 300px;
-    font-size: 100%;
+.double {
+    display: inline-flex;
+    box-sizing: border-box;
+    width: 45%;
+    height: 2rem;
     padding: 5px;
     margin: 5px;
-}
-
-.input-medium {
-    width: 455px;
-    font-size: 100%;
-    padding: 5px;
-    margin: 5px;
-
-}
-
-.input-large {
-    width: 940px;
-    font-size: 100%;
-    padding: 5px;
-    margin: 5px;
+    
 }
 
 legend {
     text-transform: uppercase;
     float: left;
-    margin: 5px 0 5px 25px;
-
+    margin: 5px 0 5px 40px;
 }
 
-#terms-conditions {
-    height: 500px;
+::placeholder {
+    color: black;
+}
+
+/* terms and conditions section */
+
+.terms-conditions {
+    height: 400px;
+    width: 90%;
     overflow-y: scroll;
     clear: both;
-    margin: 20px 25px;
+    margin: 20px auto;
     padding: 5px; 
     border: 1px solid white;
     text-align: left;
 }
 
-#terms-conditions ul {
-    margin: 20px;
-
+.terms-details {
+    font-size: 0.90rem;
 }
 
+
 #agree-checkbox {
-    margin: 20px 0 20px 25px;
+    width: 90%;
+    margin: 20px auto;
     text-align: left;
     padding: 5px;
 
@@ -223,9 +212,10 @@ legend {
     font-size: 100%;
     padding: 10px;
     float: left;
-    margin: 0 0 25px 25px;
+    margin: 0 0 25px 45px;
     background-color: rgba(244, 5, 5, .7);
     color: white;
+    border: 1px solid white;
     border-radius: 10px;
 }
 
@@ -234,7 +224,8 @@ legend {
     padding: 10px;
     float: left;
     margin: 0 0 25px 25px;
-    background-color: rgba(171, 183, 183, .7);
+    background-color: transparent;
+    border: 1px solid white;
     color: white;
     border-radius: 10px;
 }
@@ -264,6 +255,24 @@ footer i {
 
 @media screen and (max-width: 1200px) {
 
+    /*logo and nav menu */
+
+    header {
+        text-align: center;
+    }
+
+    #logo {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    #menu {
+        width: 100%;
+        background-color: rgba(0, 0, 0, .7);
+
+    }
+    
     /*facilities section screen adjustment */
 
     .facilities {
@@ -278,6 +287,46 @@ footer i {
         padding: 1rem;
         line-height: 2rem;
     }
+
+    /*Submission form screen adjustment */
+
+    .submission-form {
+        max-width: 800px;
+        margin: 6rem auto 4rem auto;
+    }
+
+    legend {
+        margin: 5px 0 5px 30px;
+    }
+
+    #submit-button {
+        margin: 0 0 25px 35px;
+    }
+
+
+}
+
+@media screen and (max-width: 800px) {
+
+    /*Submission form screen adjustment */
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .submission-form {
+        max-width: 600px;
+    }
+
+    legend {
+        margin: 5px 0 5px 20px;
+    }
+
+    #submit-button {
+        margin: 0 0 25px 25px;
+    }
+
+
 
 
 }

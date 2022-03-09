@@ -27,7 +27,7 @@
                     <a href="#">Contact</a>
                 </li>
                 <li>
-                    <a href="#">Book Free Tour</a>
+                    <a href="#">About</a>
                 </li>
             </ul>
         </nav>
@@ -36,64 +36,68 @@
             <!-- check if ok to use below link-->
             <form action="https://formdump.codeinstitute.net" method="post" class="submission-form">
                 <div id="form-heading">
-                    <h2>Single 12 Month Membership: €219.00</h2>
-                <hr>
-                    <p>Personal Information</p>
+                    <h2>12 Month Membership: €219.00</h2>
                 </div>
-
-                
-    
                 <fieldset>
                     <legend>Member Details</legend>
-    
                     <!-- Check with mentor if there is a way to make sure email and confirm email match, also check if the labeling for confirm email is ok (email-field2)-->
                     <!-- Need to really check the labeling for this entire segment-->
                     <div class="form-divs">
-                        <label for="fname"></label>
-                        <input id="fname" type="text" name="first_name" placeholder="First Name*" class="input-medium" required>
-                
-                        <label for="lname"></label>
-                        <input id="lname" type="text" name="last_name" placeholder="Last Name*" class="input-medium" required>
-                    
-                    <!-- Check to see if there is something we can use to make sure passwords and emails match-->
-                        <label for="email"></label>
-                        <input id="email" type="email" name="email" placeholder="Email*" class="input-medium" required>
+                        <div>
+                            <label for="fname"></label>
+                            <input id="fname" type="text" name="first_name" placeholder="First Name*" class="double" required>
 
-                        <label for="email2"></label>
-                        <input id="email2" type="email" name="email" placeholder="Confirm Email*" class="input-medium" required>
-                
-                        <label for="password1"></label>
-                        <input id="password1" type="password" name="password_1" placeholder="Password*" class="input-medium" required> 
+                            <label for="lname"></label>
+                            <input id="lname" type="text" name="last_name" placeholder="Last Name*" class="double" required>   
+                        </div>
+                    <!-- Check to see if there is something we can use to make sure passwords and emails match-->
+                        <div>
+                            <label for="email"></label>
+                            <input id="email" type="email" name="email" placeholder="Email*" class="double" required>
+
+                            <label for="email2"></label>
+                            <input id="email2" type="email" name="email" placeholder="Confirm Email*" class="double" required>
+                        </div>
+                        <div>
+                            <label for="password1"></label>
+                            <input id="password1" type="password" name="password_1" placeholder="Password*" class="double" required> 
                     
-                        <label for="password2"></label>
-                        <input id="password2" type="password" name="password_2" placeholder="Confirm Password*" class="input-medium" required>
+                            <label for="password2"></label>
+                            <input id="password2" type="password" name="password_2" placeholder="Confirm Password*" class="double" required>
+                        </div>
+                        <div>
+                            <label for="birthday"></label>
+                            <input id="birthday" type="date" name="date_birth" class="double" required>
                     
-                        <label for="birthday"></label>
-                        <input id="birthday" type="date" name="date_birth" class="input-medium" required>
-                    
-                        <label for="phone"></label>
-                        <input id="phone" type="tel" name="phone_number" placeholder="Phone No*" class="input-medium" required>
-                    
+                            <label for="phone"></label>
+                            <input id="phone" type="tel" name="phone_number" placeholder="Phone No*" class="double" required>
+                        </div>
+                    </div>
                 </fieldset>
                 <!-- Check to see if in the below address fieldset is it ok to see placeholder text only instead of labels as well-->
                 <fieldset>
                     <legend>Address</legend>
                     <div class="form-divs">
-                        <label for="address-field1"></label>
-                        <input id="address-field1" type="text" name="Address_line1" placeholder="Address Line 1*" class="input-large" required>
+                        <div>
+                            <label for="address-field1"></label>
+                            <input id="address-field1" type="text" name="Address_line1" placeholder="Address Line 1*" class="double" required>   
+                
+                            <label for="address-field2"></label>
+                            <input id="address-field2" type="text" name="Address_line2" placeholder="Address Line 2*" class="double">  
+                        </div>
+                        <div>
+                            <label for="city-field"></label>
+                            <input id="city-field" type="text" name="city_line" placeholder="City*" class="double" required>
                     
-                        <label for="address-field2"></label>
-                        <input id="address-field2" type="text" name="Address_line2" placeholder="Address Line 2*" class="input-large">
-                   
-                        <label for="city-field"></label>
-                        <input id="city-field" type="text" name="city_line" placeholder="City*" class="input-small" required>
-                    
-                        <label for="eircode-postcode-field"></label>
-                        <input id ="eircode-postcode-field" type="text" name="eircode_postcode" placeholder="Eircode / Post Code*" class="input-small">
+                            <label for="eircode-postcode-field"></label>
+                            <input id ="eircode-postcode-field" type="text" name="eircode_postcode" placeholder="Eircode / Post Code*" class="double" required>
+                        <div>
+                            <label for="state-field"></label>
+                            <input id="state-field" type="text" name="state_field" placeholder="State" class="double">
         
-                    <!-- Copy and pasted country list from https://www.technicalkeeda.com/html-tutorials/all-countries-drop-down-list-in-html need to note in the Project Readme-->
-                        <label for="country-field"></label>
-                        <select id="country-field" name="country" class="input-small">
+                        <!-- Copy and pasted country list from https://www.technicalkeeda.com/html-tutorials/all-countries-drop-down-list-in-html need to note in the Project Readme-->
+                            <label for="country-field"></label>
+                            <select id="country-field" name="country" class="double">
                             <option value="Ireland" selected="selected">Ireland</option>
                             <option value="Afganistan">Afghanistan</option>
                             <option value="Albania">Albania</option>
@@ -340,32 +344,36 @@
                             <option value="Zaire">Zaire</option>
                             <option value="Zambia">Zambia</option>
                             <option value="Zimbabwe">Zimbabwe</option>
-                         </select>
+                            </select>
+                        </div>
                     </div>
                 </fieldset>
                 <!-- Payment details fieldset to be added below-->
                 <fieldset>
                     <legend>Payment Details</legend>
                     <div class="form-divs">
-                        <label for="card-name"></label>
-                        <input id="card-name" type="text" name="card_name" placeholder="Card Name*" class="input-large" required>
-                    
-                        <label for="card-type"></label>
-                        <select id="card-type" name="card_type" class="input-small">
-                            <option value="">--Please choose an option--</option>
+                        <div>
+                            <label for="card-type"></label>
+                            <select id="card-type" name="card_type" class="double">
+                            <option value="">Card Type*</option>
                             <option value="mastercard">Mastercard</option>
                             <option value="visa">Visa</option>
-                        </select>
-                   
-                        <label for="card-number"></label>
-                        <input id="card-number" type="text" name="card_number" placeholder="Card Number*" class="input-small" required>
-                   
-                        <label for="CVN"></label>
-                        <input id="CVN" type="text" name="CVN" placeholder="CVN" class="input-small" required>
+                            </select>
+
+                            <label for="card-name"></label>
+                            <input id="card-name" type="text" name="card_name" placeholder="Card Name*" class="double" required>
+                        </div>
+                        <div>
+                            <label for="card-number"></label>
+                            <input id="card-number" type="text" name="card_number" placeholder="Card Number*" class="double" required>
+                        
+                            <label for="CVN"></label>
+                            <input id="CVN" type="text" name="CVN" placeholder="CVN" class="double" required>
                 
                     <!-- Run this by mentor and see if the month/year placeholder text is ok leaving empty "" at option 1-->
-                        <label for="expiry-month"></label>
-                        <select id="expiry-month" name="expiry_month" class="input-small" required>
+                        <div>
+                            <label for="expiry-month"></label>
+                            <select id="expiry-month" name="expiry_month" class="double" required>
                             <option value="">Month</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -379,9 +387,10 @@
                             <option value="10">10</option>
                             <option value="11">11</option>
                             <option value="12">12</option>
-                        </select>
-                        <label for="expiry-year"></label>
-                        <select id="expiry-year" name="expiry_year" class="input-small" required>
+                            </select>
+
+                            <label for="expiry-year"></label>
+                            <select id="expiry-year" name="expiry_year" class="double" required>
                             <option value="">Year</option>
                             <option value="2022">2022</option>
                             <option value="2023">2023</option>
@@ -395,71 +404,82 @@
                             <option value="2031">2031</option>
                             <option value="2032">2032</option>
                             <option value="2033">2033</option>
-                        </select>
+                            </select>
+                        </div>
                     </div>
                     <!-- need to add submit button, agree to terms and conditions etc**-->
                 </fieldset>
                 <fieldset>
-                    <div id="terms-conditions">
+                    <div class="terms-conditions">
                         <!-- Check if H3 is the correct heading to use with mentor-->
                         <ul>
                             <li>Terms and Conditions</li>
+                            <!-- Check if the below is an ok way to create a gap-->
+                            <li></li>
                                 <ul>
-                                    <li>
+                                    <li class="terms-details">
                                         If you are intending to join the Club you should read and understand the Terms & Conditions before you complete and sign the Membership 
                                         Form.
                                     </li>
-                                    <li>
+                                    <li class="terms-details">
                                         The membership contract between you and the club comes into effect once the Membership Form has been completed and signed by you 
                                         and accepted by a duly authorised officer of the Club and the membership fees shown in the Form have been received by the Club. 
                                     </li>
-                                    <li>
+                                    <li class="terms-details">
                                         These Terms & Conditions apply to all members and others using the Club Facilities. 
                                     </li>
                                 </ul>
+                            <li></li>
                             <li>Definitions & Interpretation</li>
+                            <li></li>
                                 <ul>
-                                    <li>
+                                    <li class="terms-details">
                                         In these Terms & Conditions:
                                     </li>
-                                    <li>
+                                    <li class="terms-details">
                                         'Facilities' include the training provided at the Club as well as the equipment, washrooms and other facilities available at the Club.
                                     </li>
-                                    <li>
+                                    <li class="terms-details">
                                         'Rules' means the rules of the Club from time to time in force. The Rules are posted on a notice board at the Club and cover such matter 
                                         as opening hours, use of the Club facilities and conduct of the members and guests. 
                                     </li>
-                                    <li>
+                                    <li class="terms-details">
                                         'Terms' means these Terms & Conditions.
                                     </li>
-                                    <li>
+                                    <li class="terms-details">
                                         References to 'we' and 'us' are reference to the Club. References to 'you' are references to the member.
                                     </li>
                                 </ul>
+                            <li></li>
                             <li>Access to Club</li>
+                            <li></li>
                                 <ul>
-                                    <li>
+                                    <li class="terms-details">
                                         As a member you are entitled to use the Facilities of the Club during the Club's normal opening hours so long as you remain a member and on 
                                         condition that you comply with these Terms and the Rules. 
                                     </li>
-                                    <li>
+                                    <li class="terms-details">
                                         If you are issued with a membership card, this must be shown on entry to the Club. Access to the Club may be refused if you do not have the card 
                                         or provide adequate evidence of your identity and membership.
                                     </li>
                                 </ul>
+                            <li></li>
                             <li>The Rules</li>
+                            <li></li>
                                 <ul>
-                                    <li>
+                                    <li class="terms-details">
                                         The Club Rules are posted on the notice board. You should read the Rules and be sure to observe them when you are at the Club.
                                     </li>
-                                    <li>
+                                    <li class="terms-details">
                                         We reserve the right to change the Rules from time to time. Any change will normally be posted on the notice at least 14 days before it comes into 
                                         effect. You should check the notice board for changes and if you have any concerns with regard to any changes in the Rules, please inform management.
                                     </li>
                                 </ul>
+                            <li></li>
                             <li>Your Health and Physical Condition</li>
+                            <li></li>
                                 <ul>
-                                    <li>
+                                    <li class="terms-details">
                                         You confirm to us that you are in good physical condition when joining the Club and whenever you use the Facilities and/or undertake training by any 
                                         of the Club's trainers and that you are not aware of any medical or other reason that might be detrimental to your health, safety, comfort or physical
                                         condition.
