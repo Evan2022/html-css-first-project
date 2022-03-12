@@ -230,6 +230,71 @@ legend {
     border-radius: 10px;
 }
 
+
+/* Class Timetable Section */
+
+.timetable-heading {
+    text-align: center;
+    margin: 4rem auto 0 auto;
+}
+
+.timetable-heading p {
+    padding-top: 1rem;
+    font-size: 0.90rem;
+}
+
+.timetable {
+    width: 1000px;
+    border-collapse: collapse;
+    text-align: left;
+    margin: 2rem auto 4rem auto;
+    border: 1px solid white;
+    text-transform: uppercase;
+}
+
+.timetable th {
+    background-color: rgba(244, 5, 5, .7);
+    font-weight: normal;
+    height: 2rem;
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+
+.timetable td {
+    padding: 10px;
+    height: 2rem;
+    font-size: 0.90rem;
+    border-bottom: 1px solid white;
+}
+
+/* Class Description Section */
+
+.description-table {
+    width: 1000px;
+    margin: 2rem auto 4rem auto;
+    border-collapse: collapse;
+    border: 1px solid white;
+}
+
+.description-table th {
+    background-color: rgba(244, 5, 5, .7);
+    font-weight: normal;
+    height: 2rem;
+    border-bottom: 1px solid white;
+    text-align: left;
+    padding: 10px;
+
+}
+
+.description-table td {
+    padding: 10px;
+    height: 2rem;
+    font-size: 0.90rem;
+    border-bottom: 1px solid white;
+}
+
+
+
 /* Footer Section */
 
 footer {
@@ -303,12 +368,65 @@ footer i {
         margin: 0 0 25px 35px;
     }
 
+    /*Class timetable heading */
+
+    .timetable-heading {
+        text-align: center;
+        margin: 6rem auto 0 auto;
+    }
+
+    .timetable {
+        width: 800px;
+    }
+
+    .description-table{
+        width: 800px;
+    }
+
+}
+@media screen and (max-width: 1000px) {
+
+    /* Class Timetable */
+    .timetable-heading {
+        font-size: 1.5rem;
+    }
+
+    .timetable {
+        width: 700px;
+    }
+
+    .timetable th {
+        font-size: 0.90rem;
+    }
+    
+    .timetable td {
+        font-size: 0.80rem;
+    }
+
+    /* description table */
+
+    .description-table {
+        width: 700px;
+    }
+
+    .description-table th {
+        font-size: 0.90rem;
+
+    }
+
+    .description-table td {
+        font-size: 0.80rem;
+    }
 
 }
 
 @media screen and (max-width: 800px) {
 
     /*Submission form screen adjustment */
+
+    #logo {
+        font-size: 2rem;
+    }
 
     h2 {
         font-size: 1.5rem;
@@ -326,7 +444,29 @@ footer i {
         margin: 0 0 25px 25px;
     }
 
+    /* Class timetable */
 
+    .timetable {
+        width: 600px;
+    }
 
+    .timetable th {
+        padding: 5px;
+    }
 
+    .timetable td {
+        padding: 5px;
+    }
+
+    .description-table {
+        width: 600px;
+    }
+
+    .description-table th {
+        padding: 5px;
+    }
+
+    .description-table td {
+        padding: 5px;
+    }
 }
