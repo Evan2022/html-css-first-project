@@ -100,7 +100,8 @@ h2 {
 /* Facilities Section */
 
 .facilities-wrapper {
-    margin-top: 2rem;
+    margin: 2rem auto 0 auto;
+    width: 90%;
 }
 
 .facilities-wrapper h2 {
@@ -118,7 +119,7 @@ h2 {
 .facilities .facilities-sections {
     background-color: rgba(244, 5, 5, .7);
     width: 30%;
-    margin: 0px 5px 6rem 5px;
+    margin: 0px 5px 3rem 5px;
     padding: 1rem;
     line-height: 2rem;
 }
@@ -130,6 +131,73 @@ h2 {
 .facilities-sections i {
     font-size: 3rem;
     margin-top: 1rem;
+}
+
+/* Contact Us Section */
+
+.contact-wrapper {
+    width: 90%;
+    margin: 0 auto 3rem auto;
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.contact h3 {
+    padding-bottom: 2rem;
+}
+
+.contact-left {
+    width: 50%;
+
+}
+
+.contact-right {
+    width: 50%;
+
+}
+
+.input-outer {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+
+}
+
+.contact-input {
+    width: 40%;
+    margin: 0 5%;
+
+}
+
+.contact-input input {
+    width: 100%;
+    line-height: 2rem;
+    padding: 5px;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.contact-message {
+    margin: auto;
+    width: 90%;
+}
+
+.contact-message input {
+    width: 100%;
+    padding: 5px;
+    height: 200px;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.contact-input ::placeholder, .contact-message ::placeholder{
+    color: white;
+    font-size: 0.90rem;
 }
 
 
@@ -178,8 +246,9 @@ legend {
     margin: 5px 0 5px 40px;
 }
 
-::placeholder {
+::placeholder, select, input{
     color: black;
+    font-size: 0.8rem;
 }
 
 /* terms and conditions section */
@@ -195,10 +264,9 @@ legend {
     text-align: left;
 }
 
-.terms-details {
+.terms-conditions p {
     font-size: 0.90rem;
 }
-
 
 #agree-checkbox {
     width: 90%;
@@ -267,6 +335,10 @@ legend {
     border-bottom: 1px solid white;
 }
 
+.timetable p {
+    text-transform: none;
+}
+
 /* Footer Section */
 
 footer {
@@ -284,7 +356,7 @@ footer li  {
 footer i {
     font-size: 2rem;
     line-height: 60px;
-    margin: 14px 60px;
+    margin: 1rem 5rem;
     color: white;
 }
 
@@ -311,6 +383,10 @@ footer i {
     }
     
     /*facilities section screen adjustment */
+
+    .facilities-wrapper {
+        width: 100%;
+    }
 
     .facilities {
         display: inline;
@@ -371,6 +447,13 @@ footer i {
         font-size: 0.80rem;
     }
 
+    /*footer */
+
+    footer i {
+        font-size: 2rem;
+        margin: 1rem 3rem;
+    }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -383,6 +466,16 @@ footer i {
 
     h2 {
         font-size: 1.5rem;
+    }
+
+    /*nav menu */
+    #menu li {
+        margin-right: 2rem;
+        font-size: 0.90rem;
+    }
+
+    .facilities {
+        font-size: 0.90rem;
     }
 
     .submission-form {
@@ -410,4 +503,66 @@ footer i {
     .timetable td {
         padding: 5px;
     }
+}
+
+@media screen and (max-width: 700px) {
+
+    .timetable {
+        width: 500px;
+    }
+
+    .timetable th {
+        padding: 2px;
+        font-size: 0.80rem;
+    }
+
+
+}
+
+@media screen and (max-width: 550px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    #logo {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+       /*nav menu */
+       #menu li {
+        margin-right: 1rem;
+    }
+
+    /* jointodayform */
+
+    legend {
+        font-size: 0.80rem;
+    }
+
+    .terms-conditions p {
+        font-size: 0.80rem;
+    }
+
+    /*timetable*/
+
+    .timetable-heading p {
+        font-size: 0.80rem;
+    }
+
+    .timetable {
+        width: 460px;
+    }
+
+     /*footer */
+
+    footer i {
+        margin: 1rem 2rem;
+        font-size: 1.3rem;
+    }
+
 }
