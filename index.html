@@ -27,7 +27,7 @@
                     <a href="timetable.html" target="_blank">Class Timetable</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#contact-link">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -36,7 +36,7 @@
     <section id="hero">
         <div class="join">
                 <h2>12 Month Membership</h2>
-                <a href="joinform.html" target="_blank">Join Today</a>
+                <a href="joinform.html" target="_blank" class="push-zoom">Join Today</a>
                 <h2>No Joining Fee</h2>
         </div>
     </section>
@@ -74,7 +74,7 @@
     </section>
 
     <!-- Add Contact Section-->
-    <section>
+    <section id="contact-link">
         <div class="contact-wrapper">
             <h2>Contact Us</h2>
             <div class="contact">
@@ -106,13 +106,44 @@
                         <div class="input-outer">
                             <div class="contact-message">
                                 <label for="message"></label>
-                                <input id="message" type="text" name="message" placeholder="Your Message*" required >
+                                <textarea id="message" type="text" name="message" placeholder="Your Message*" required></textarea>
                             </div>
                         </div>
+                        <div>
+                            <div>
+                                <input type="submit" value="SUBMIT" class="contact-submit push-zoom">
+                                <input type="reset" value="RESET" class="contact-reset reset-zoom">
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 <div class="contact-right">
                     <h3>CONTACT DETAILS</h3>
-    
+                    <table class="contact-table">
+                        <tr>
+                            <td>MON-FRI</td>
+                            <td>06:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <td>SAT-SUN</td>
+                            <td>07:00 - 19:00</td>
+                        </tr>
+                        <tr>
+                            <td>EMAIL</td>
+                            <td>info@muscleverse.ie</td>
+                        </tr>
+                        <tr>
+                            <td>PHONE</td>
+                            <td>01 123 4567</td>
+                        </tr>
+                        <tr>
+                            <td>ADDRESS</td>
+                            <td>
+                                <a href="https://goo.gl/maps/4DMnKcoRsri1y67j8" target="_blank" rel="noopener" aria-label="Link to our address on Google Maps
+                                (opens in a new tab)">Blackrock Business Park, 1 Block 1, Carysfort Ave, Blackrock, Co. Dublin</a> 
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
@@ -123,16 +154,16 @@
     <footer>
         <ul>
             <li>
-                <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook Page(opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook Page(opens in a new tab)"><i class="fa-brands fa-facebook socials-zoom"></i></a>
             </li>
             <li>
-                <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Visit our Twitter Page(opens in a new tab)"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Visit our Twitter Page(opens in a new tab)"><i class="fa-brands fa-twitter socials-zoom"></i></a>
             </li>
             <li>
-                <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Visit our instagram Page(opens in a new tab)"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Visit our instagram Page(opens in a new tab)"><i class="fa-brands fa-instagram socials-zoom"></i></a>
             </li>
             <li>
-                <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="Visit our Youtube Page(opens in a new tab)"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="Visit our Youtube Page(opens in a new tab)"><i class="fa-brands fa-youtube socials-zoom"></i></a>
             </li>
         </ul>
     </footer>

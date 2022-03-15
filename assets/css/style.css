@@ -30,6 +30,41 @@ h2 {
 
 }
 
+h3 {
+    font-weight: normal;
+}
+
+
+/* HOVER EFFECTS */
+
+
+.push-zoom:hover {
+    border: 1px solid white;
+    color: white;
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+.reset-zoom:hover {
+    border: 1px solid red;
+    color: red;
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+.socials-zoom:hover {
+    transform: scale(1.2);
+
+}
+
+#menu a:hover, td a:hover{
+    border-bottom: 1px solid white;
+
+}
+
+
 /* Nav Menu */
 
 #logo {
@@ -41,6 +76,7 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 3px;
     color: white;
+
 }
 
 #menu, #logo {
@@ -89,11 +125,11 @@ h2 {
 
 .join a {
     text-decoration: none;
-    color: white;
+    color: red;
     font-size: 1.5rem;
     text-transform: uppercase;
     border-radius: 1rem;
-    border: 2px solid white;
+    border: 2px solid red;
     padding: 0.75rem;
 }
 
@@ -148,7 +184,7 @@ h2 {
 }
 
 .contact h3 {
-    padding-bottom: 2rem;
+    padding: 10px 0 2rem 0;
 }
 
 .contact-left {
@@ -164,7 +200,6 @@ h2 {
 .input-outer {
     display: flex;
     padding: 1rem;
-    justify-content: center;
 
 }
 
@@ -179,7 +214,9 @@ h2 {
     line-height: 2rem;
     padding: 5px;
     border: 1px solid white;
-    background-color: rgba(0, 0, 0, .7);
+    background-color: transparent;
+    color: white;
+    font-size: 0.90rem;
 }
 
 .contact-message {
@@ -187,19 +224,57 @@ h2 {
     width: 90%;
 }
 
-.contact-message input {
+.contact-message textarea {
     width: 100%;
-    padding: 5px;
+    padding: 10px 5px;
     height: 200px;
     border: 1px solid white;
-    background-color: rgba(0, 0, 0, .7);
+    background-color: transparent;
+    color: white;
 }
 
 .contact-input ::placeholder, .contact-message ::placeholder{
     color: white;
-    font-size: 0.90rem;
 }
 
+.contact-submit {
+    padding: 10px;
+    margin-right: 5px;
+    background-color: transparent;
+    color: red;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.contact-reset {
+    padding: 10px;
+    margin-left: 5px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 10px;
+}
+
+.contact-table {
+    width: 80%;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 1rem auto 0 auto;
+    border: 1px solid white;
+
+}
+
+.contact-table td {
+    padding: 10px;
+    height: 2rem;
+    font-size: 0.90rem;
+    border-bottom: 1px solid white;
+}
+
+.contact-table a {
+    text-decoration: none;
+    color: white;
+}
 
 
 /* Submission Form Section */
@@ -268,7 +343,7 @@ legend {
     font-size: 0.90rem;
 }
 
-#agree-checkbox {
+.agree-checkbox {
     width: 90%;
     margin: 20px auto;
     text-align: left;
@@ -276,19 +351,17 @@ legend {
 
 }
 
-#submit-button {
-    font-size: 100%;
+.submit-button {
     padding: 10px;
     float: left;
     margin: 0 0 25px 45px;
-    background-color: rgba(244, 5, 5, .7);
-    color: white;
-    border: 1px solid white;
+    background-color: transparent;
+    color: red;
+    border: 1px solid red;
     border-radius: 10px;
 }
 
-#reset-button {
-    font-size: 100%;
+.reset-button {
     padding: 10px;
     float: left;
     margin: 0 0 25px 25px;
@@ -297,7 +370,6 @@ legend {
     color: white;
     border-radius: 10px;
 }
-
 
 /* Class Timetable Section */
 
@@ -345,7 +417,6 @@ footer {
     height: 60px;
     width: 100%;
     background-color: rgba(244, 5, 5, .7);
-    margin: 0;
     text-align: center;
 }
 
@@ -454,6 +525,26 @@ footer i {
         margin: 1rem 3rem;
     }
 
+}
+
+@media screen and (max-width: 850px) {
+
+    .contact {
+        display: inline-block;
+        margin-top: 2rem;
+        justify-content: center;
+    }
+
+    .contact-left {
+        width: 100%;
+        margin-bottom: 2rem;
+    
+    }
+    
+    .contact-right {
+        width: 100%;
+    
+    }
 }
 
 @media screen and (max-width: 800px) {
