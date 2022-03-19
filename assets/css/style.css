@@ -34,37 +34,6 @@ h3 {
     font-weight: normal;
 }
 
-
-/* HOVER EFFECTS */
-
-
-.push-zoom:hover {
-    border: 1px solid white;
-    color: white;
-    transform: scale(1.2);
-    cursor: pointer;
-
-}
-
-.reset-zoom:hover {
-    border: 1px solid red;
-    color: red;
-    transform: scale(1.2);
-    cursor: pointer;
-
-}
-
-.socials-zoom:hover {
-    transform: scale(1.2);
-
-}
-
-#menu a:hover, td a:hover{
-    border-bottom: 1px solid white;
-
-}
-
-
 /* Nav Menu */
 
 #logo {
@@ -97,6 +66,36 @@ h3 {
     text-decoration: none;
     color: white;
     padding: 0.5rem;
+}
+
+
+/* HOVER EFFECTS */
+
+
+.push-zoom:hover {
+    border: 1px solid white;
+    color: white;
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+.reset-zoom:hover {
+    border: 1px solid red;
+    color: red;
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+.socials-zoom:hover {
+    transform: scale(1.2);
+
+}
+
+#menu a:hover, td a:hover{
+    border-bottom: 1px solid white;
+
 }
 
 /*Hero Image section */
@@ -154,8 +153,8 @@ h3 {
 
 .facilities .facilities-sections {
     background-color: rgba(244, 5, 5, .7);
-    width: 30%;
-    margin: 0px 5px 3rem 5px;
+    width: 25%;
+    margin: 0px 20px 3rem 20px;
     padding: 1rem;
     line-height: 2rem;
 }
@@ -167,6 +166,10 @@ h3 {
 .facilities-sections i {
     font-size: 3rem;
     margin-top: 1rem;
+}
+
+.facilities-sections ul {
+    list-style-type: none;
 }
 
 /* Contact Us Section */
@@ -425,7 +428,7 @@ footer li  {
 }
 
 footer i {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 60px;
     margin: 1rem 5rem;
     color: white;
@@ -452,27 +455,19 @@ footer i {
         background-color: rgba(0, 0, 0, .7);
 
     }
-    
-    /*facilities section screen adjustment */
 
     .facilities-wrapper {
         width: 100%;
     }
 
-    .facilities {
-        display: inline;
-        text-align: center;
-    }
-
     .facilities .facilities-sections {
-        background-color: rgba(244, 5, 5, .7);
-        width: auto;
-        margin: 0px 2rem 2rem 2rem;
-        padding: 1rem;
-        line-height: 2rem;
+        width: 30%;
+        margin: 0px 5px 2rem 5px;
     }
 
-    /*Submission form screen adjustment */
+    .facilities-sections ul {
+        font-size: 0.90rem;
+    }
 
     .submission-form {
         max-width: 800px;
@@ -483,11 +478,9 @@ footer i {
         margin: 5px 0 5px 30px;
     }
 
-    #submit-button {
+    .submit-button {
         margin: 0 0 25px 35px;
     }
-
-    /*Class timetable heading */
 
     .timetable-heading {
         text-align: center;
@@ -521,13 +514,27 @@ footer i {
     /*footer */
 
     footer i {
-        font-size: 2rem;
         margin: 1rem 3rem;
     }
 
 }
 
 @media screen and (max-width: 850px) {
+
+    /*facilities section screen adjustment */
+
+    .facilities-wrapper {
+        width: 50%;
+    }
+
+    .facilities {
+        display: inline;
+        text-align: center;
+    }
+
+    .facilities .facilities-sections {
+        width: auto;
+    }
 
     .contact {
         display: inline-block;
@@ -577,7 +584,7 @@ footer i {
         margin: 5px 0 5px 20px;
     }
 
-    #submit-button {
+    .submit-button {
         margin: 0 0 25px 25px;
     }
 
@@ -597,6 +604,10 @@ footer i {
 }
 
 @media screen and (max-width: 700px) {
+
+    .facilities-wrapper {
+        width: 60%;
+    }
 
     .timetable {
         width: 500px;
@@ -624,36 +635,65 @@ footer i {
         font-size: 1.3rem;
     }
 
-       /*nav menu */
-       #menu li {
+    #menu li {
         margin-right: 1rem;
     }
 
-    /* jointodayform */
-
-    legend {
-        font-size: 0.80rem;
+    .facilities-wrapper {
+        width: 80%;
     }
 
-    .terms-conditions p {
-        font-size: 0.80rem;
+    .facilities-sections i {
+        font-size: 2rem;
     }
 
-    /*timetable*/
-
-    .timetable-heading p {
+    legend, .terms-conditions p, .timetable-heading p {
         font-size: 0.80rem;
     }
 
     .timetable {
-        width: 460px;
+        width: auto;
+        margin: 2rem 10px 4rem 10px;
     }
 
-     /*footer */
+    #timetable-overflow {
+        display: block;
+        overflow-x: scroll;
+    }
 
-    footer i {
-        margin: 1rem 2rem;
+     footer i {
+        font-size: 1.2rem;
+        line-height: 60px;
+        margin: 1.2rem 1.5rem;
+    }
+
+
+}
+
+@media screen and (max-width: 350px) {
+
+    #logo {
         font-size: 1.3rem;
+    }
+
+    #menu li {
+        margin-right: 5px;
+    }
+
+    ::placeholder, select, input, .terms-conditions p, .timetable-heading p, .agree-checkbox{
+        font-size: 0.7rem;
+    }
+
+    .facilities-sections ul, .contact-table td {
+        font-size: 0.8rem;
+    }
+
+    legend {
+        margin: 5px 0 5px 10px;
+    }
+
+    .submit-button {
+        margin: 0 0 25px 10px;
     }
 
 }
