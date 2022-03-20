@@ -13,8 +13,6 @@ body {
     font-size: 16px;
 }
 
-/* Headings and Header */
-
 header {
     background-color: rgba(244, 5, 5, .7);
     width: 100%;
@@ -27,14 +25,11 @@ h2 {
     font-size: 2rem;
     letter-spacing: 3px;
     font-style: italic;
-
 }
 
 h3 {
     font-weight: normal;
 }
-
-/* Nav Menu */
 
 #logo {
     font-family: 'Russo One', sans-serif;
@@ -45,7 +40,6 @@ h3 {
     text-transform: uppercase;
     letter-spacing: 3px;
     color: white;
-
 }
 
 #menu, #logo {
@@ -68,16 +62,11 @@ h3 {
     padding: 0.5rem;
 }
 
-
-/* HOVER EFFECTS */
-
-
 .push-zoom:hover {
     border: 1px solid white;
     color: white;
     transform: scale(1.2);
     cursor: pointer;
-
 }
 
 .reset-zoom:hover {
@@ -85,30 +74,22 @@ h3 {
     color: red;
     transform: scale(1.2);
     cursor: pointer;
-
 }
 
 .socials-zoom:hover {
     transform: scale(1.2);
-
 }
 
 #menu a:hover, td a:hover{
     border-bottom: 1px solid white;
-
 }
-
-/*Hero Image section */
 
 #hero {
     height: 100vh;
     width: 100%;
     background: url('../images/pexels-jonathan-borba-3076514.jpg') no-repeat left 35% top;
     background-color: black;
-
 }
-
-/* Join today section */
 
 .join {
     width: 100%;
@@ -131,8 +112,6 @@ h3 {
     border: 2px solid red;
     padding: 0.75rem;
 }
-
-/* Facilities Section */
 
 .facilities-wrapper {
     margin: 2rem auto 0 auto;
@@ -172,8 +151,6 @@ h3 {
     list-style-type: none;
 }
 
-/* Contact Us Section */
-
 .contact-wrapper {
     width: 90%;
     margin: 0 auto 3rem auto;
@@ -192,24 +169,20 @@ h3 {
 
 .contact-left {
     width: 50%;
-
 }
 
 .contact-right {
     width: 50%;
-
 }
 
 .input-outer {
     display: flex;
     padding: 1rem;
-
 }
 
 .contact-input {
     width: 40%;
     margin: 0 5%;
-
 }
 
 .contact-input input {
@@ -264,7 +237,6 @@ h3 {
     text-align: center;
     margin: 1rem auto 0 auto;
     border: 1px solid white;
-
 }
 
 .contact-table td {
@@ -278,9 +250,6 @@ h3 {
     text-decoration: none;
     color: white;
 }
-
-
-/* Submission Form Section */
 
 #page-background {
     background: url('../images/risen-wang-20jX9b35r_M-unsplash\ \(1\).jpg') no-repeat center center;
@@ -305,7 +274,6 @@ h3 {
 .form-divs {
     justify-content: center;
     clear: both;
-
 }
 
 .double {
@@ -315,7 +283,6 @@ h3 {
     height: 2rem;
     padding: 5px;
     margin: 5px;
-    
 }
 
 legend {
@@ -328,8 +295,6 @@ legend {
     color: black;
     font-size: 0.8rem;
 }
-
-/* terms and conditions section */
 
 .terms-conditions {
     height: 400px;
@@ -351,7 +316,6 @@ legend {
     margin: 20px auto;
     text-align: left;
     padding: 5px;
-
 }
 
 .submit-button {
@@ -373,8 +337,6 @@ legend {
     color: white;
     border-radius: 10px;
 }
-
-/* Class Timetable Section */
 
 .timetable-heading {
     text-align: center;
@@ -414,8 +376,6 @@ legend {
     text-transform: none;
 }
 
-/* Footer Section */
-
 footer {
     height: 60px;
     width: 100%;
@@ -434,11 +394,7 @@ footer i {
     color: white;
 }
 
-/* screen adjustment */
-
 @media screen and (max-width: 1200px) {
-
-    /*logo and nav menu */
 
     header {
         text-align: center;
@@ -453,7 +409,6 @@ footer i {
     #menu {
         width: 100%;
         background-color: rgba(0, 0, 0, .7);
-
     }
 
     .facilities-wrapper {
@@ -494,7 +449,6 @@ footer i {
 }
 @media screen and (max-width: 1000px) {
 
-    /* Class Timetable */
     .timetable-heading {
         font-size: 1.5rem;
     }
@@ -511,8 +465,6 @@ footer i {
         font-size: 0.80rem;
     }
 
-    /*footer */
-
     footer i {
         margin: 1rem 3rem;
     }
@@ -520,8 +472,6 @@ footer i {
 }
 
 @media screen and (max-width: 850px) {
-
-    /*facilities section screen adjustment */
 
     .facilities-wrapper {
         width: 50%;
@@ -545,18 +495,14 @@ footer i {
     .contact-left {
         width: 100%;
         margin-bottom: 2rem;
-    
     }
     
     .contact-right {
         width: 100%;
-    
     }
 }
 
 @media screen and (max-width: 800px) {
-
-    /*Submission form screen adjustment */
 
     #logo {
         font-size: 2rem;
@@ -566,7 +512,6 @@ footer i {
         font-size: 1.5rem;
     }
 
-    /*nav menu */
     #menu li {
         margin-right: 2rem;
         font-size: 0.90rem;
@@ -587,8 +532,6 @@ footer i {
     .submit-button {
         margin: 0 0 25px 25px;
     }
-
-    /* Class timetable */
 
     .timetable {
         width: 600px;
@@ -617,8 +560,7 @@ footer i {
         padding: 2px;
         font-size: 0.80rem;
     }
-
-
+    
 }
 
 @media screen and (max-width: 550px) {
