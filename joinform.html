@@ -30,15 +30,13 @@
         </nav>
     </header>
     <section> 
-            <!-- check if ok to use below link-->
+            <!-- CHECK TO SEE IF THE BELOW LINK IS OK TO USE WITH MENTOR-->
             <form action="https://formdump.codeinstitute.net" method="post" class="submission-form">
                 <div id="form-heading">
                     <h2>12 Month Membership: €219.00</h2>
                 </div>
                 <fieldset>
                     <legend>Member Details</legend>
-                    <!-- Check with mentor if there is a way to make sure email and confirm email match, also check if the labeling for confirm email is ok (email-field2)-->
-                    <!-- Need to really check the labeling for this entire segment-->
                     <div class="form-divs">
                         <div>
                             <label for="fname"></label>
@@ -47,7 +45,6 @@
                             <label for="lname"></label>
                             <input id="lname" type="text" name="last_name" placeholder="Last Name*" class="double" required>   
                         </div>
-                    <!-- Check to see if there is something we can use to make sure passwords and emails match-->
                         <div>
                             <label for="email"></label>
                             <input id="email" type="email" name="email" placeholder="Email*" class="double" required>
@@ -71,7 +68,6 @@
                         </div>
                     </div>
                 </fieldset>
-                <!-- Check to see if in the below address fieldset is it ok to see placeholder text only instead of labels as well-->
                 <fieldset>
                     <legend>Address</legend>
                     <div class="form-divs">
@@ -88,11 +84,11 @@
                     
                             <label for="eircode-postcode-field"></label>
                             <input id ="eircode-postcode-field" type="text" name="eircode_postcode" placeholder="Eircode / Post Code*" class="double" required>
+                        </div>
                         <div>
                             <label for="state-field"></label>
                             <input id="state-field" type="text" name="state_field" placeholder="State" class="double">
-        
-                        <!-- Copy and pasted country list from https://www.technicalkeeda.com/html-tutorials/all-countries-drop-down-list-in-html need to note in the Project Readme-->
+                         <!-- Copy and pasted country list from https://www.technicalkeeda.com/html-tutorials/all-countries-drop-down-list-in-html need to note in the Project Readme-->
                             <label for="country-field"></label>
                             <select id="country-field" name="country" class="double">
                             <option value="Ireland" selected="selected">Ireland</option>
@@ -345,7 +341,6 @@
                         </div>
                     </div>
                 </fieldset>
-                <!-- Payment details fieldset to be added below-->
                 <fieldset>
                     <legend>Payment Details</legend>
                     <div class="form-divs">
@@ -366,9 +361,9 @@
                         
                             <label for="CVN"></label>
                             <input id="CVN" type="text" name="CVN" placeholder="CVN" class="double" required maxlength="4">
-                
-                    <!-- Run this by mentor and see if the month/year placeholder text is ok leaving empty "" at option 1-->
+                        </div>     
                         <div>
+                            <!-- Run this by mentor and see if the month/year placeholder text is ok leaving empty "" at option 1-->
                             <label for="expiry-month"></label>
                             <select id="expiry-month" name="expiry_month" class="double" required>
                             <option value="">Month</option>
@@ -385,7 +380,7 @@
                             <option value="11">11</option>
                             <option value="12">12</option>
                             </select>
-
+                            
                             <label for="expiry-year"></label>
                             <select id="expiry-year" name="expiry_year" class="double" required>
                             <option value="">Year</option>
@@ -404,74 +399,63 @@
                             </select>
                         </div>
                     </div>
-                    <!-- need to add submit button, agree to terms and conditions etc**-->
                 </fieldset>
                 <fieldset>
                     <div class="terms-conditions">
-                        <!-- Check if H3 is the correct heading to use with mentor-->
                         <ul>
                             <li>Terms and Conditions</li>
-                            <!-- Check if the below is an ok way to create a gap-->
-                            <br>
-                                <ul>
-                                    <li>
-                                        <p>
-                                            If you are intending to join the Club you should read and understand the Terms & Conditions before you complete and sign the Membership 
-                                            Form. The membership contract between you and the club comes into effect once the Membership Form has been completed and signed by you 
-                                            and accepted by a duly authorised officer of the Club and the membership fees shown in the Form have been received by the Club. 
-                                            These Terms & Conditions apply to all members and others using the Club Facilities. 
-                                        </p>
-                                </ul>
-                            <br>
+                                <li></li>
+                                <li>
+                                    <p>
+                                        If you are intending to join the Club you should read and understand the Terms & Conditions before you complete and sign the Membership 
+                                        Form. The membership contract between you and the club comes into effect once the Membership Form has been completed and signed by you 
+                                        and accepted by a duly authorised officer of the Club and the membership fees shown in the Form have been received by the Club. 
+                                        These Terms & Conditions apply to all members and others using the Club Facilities. 
+                                    </p>
+                                </li>
+                                <li></li>
                             <li>Definitions & Interpretation</li>
-                            <br>
-                                <ul>
-                                    <li>
-                                        <p>
-                                            In these Terms & Conditions: 'Facilities' include the training provided at the Club as well as the equipment, washrooms and other 
-                                            facilities available at the Club. 'Rules' means the rules of the Club from time to time in force. The Rules are posted on a notice board 
-                                            at the Club and cover such matter as opening hours, use of the Club facilities and conduct of the members and guests. 
-                                            'Terms' means these Terms & Conditions. References to 'we' and 'us' are reference to the Club. References to 'you' are references to the member.
-                                        </p>
-                                </ul>
-                            <br>
+                                <li></li>
+                                <li>
+                                    <p>
+                                        In these Terms & Conditions: 'Facilities' include the training provided at the Club as well as the equipment, washrooms and other 
+                                        facilities available at the Club. 'Rules' means the rules of the Club from time to time in force. The Rules are posted on a notice board 
+                                        at the Club and cover such matter as opening hours, use of the Club facilities and conduct of the members and guests. 
+                                        'Terms' means these Terms & Conditions. References to 'we' and 'us' are reference to the Club. References to 'you' are references to the member.
+                                    </p>
+                                </li>
+                                <li></li>
                             <li>Access to Club</li>
-                            <br>
-                                <ul>
-                                    <li>
-                                        <p>
-                                            As a member you are entitled to use the Facilities of the Club during the Club's normal opening hours so long as you remain a member and on 
-                                            condition that you comply with these Terms and the Rules. 
-                                            If you are issued with a membership card, this must be shown on entry to the Club. Access to the Club may be refused if you do not have the card 
-                                            or provide adequate evidence of your identity and membership.
-                                        </p>
-                                    </li>
-                                </ul>
-                            <br>
+                                <li></li>
+                                <li>
+                                    <p>
+                                        As a member you are entitled to use the Facilities of the Club during the Club's normal opening hours so long as you remain a member and on 
+                                        condition that you comply with these Terms and the Rules. 
+                                        If you are issued with a membership card, this must be shown on entry to the Club. Access to the Club may be refused if you do not have the card 
+                                        or provide adequate evidence of your identity and membership.
+                                    </p>
+                                </li>
+                                <li></li>
                             <li>The Rules</li>
-                            <br>
-                                <ul>
-                                    <li>
-                                        <p>
-                                            The Club Rules are posted on the notice board. You should read the Rules and be sure to observe them when you are at the Club.
-                                            We reserve the right to change the Rules from time to time. Any change will normally be posted on the notice at least 14 
-                                            days before it comes into effect. You should check the notice board for changes and if you have any concerns with regard 
-                                            to any changes in the Rules, please inform management.
-                                        </p>
-                                    </li>
-                                </ul>
-                            <br>
+                                <li></li>
+                                <li>
+                                    <p>
+                                        The Club Rules are posted on the notice board. You should read the Rules and be sure to observe them when you are at the Club.
+                                        We reserve the right to change the Rules from time to time. Any change will normally be posted on the notice at least 14 
+                                        days before it comes into effect. You should check the notice board for changes and if you have any concerns with regard 
+                                        to any changes in the Rules, please inform management.
+                                    </p>
+                                </li>
+                                <li></li>
                             <li>Your Health and Physical Condition</li>
-                            <br>
-                                <ul>
-                                    <li>
-                                        <p>
-                                            You confirm to us that you are in good physical condition when joining the Club and whenever you use the Facilities and/or undertake training by any 
-                                            of the Club's trainers and that you are not aware of any medical or other reason that might be detrimental to your health, safety, comfort or physical
-                                            condition.
-                                        </p>
-                                    </li>
-                                </ul>
+                                <li></li>
+                                <li>
+                                    <p>
+                                        You confirm to us that you are in good physical condition when joining the Club and whenever you use the Facilities and/or undertake training by any 
+                                        of the Club's trainers and that you are not aware of any medical or other reason that might be detrimental to your health, safety, comfort or physical
+                                        condition.
+                                    </p>
+                                </li>
                         </ul>
                     </div>
                     <div class="agree-checkbox">
@@ -481,7 +465,6 @@
                     <div>
                         <input type="submit" value="JOIN TODAY" class="submit-button push-zoom">
                         <input type="reset" value="RESET" class="reset-button reset-zoom">
-
                     </div>
                 </fieldset>
             </form>
