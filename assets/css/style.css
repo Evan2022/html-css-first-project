@@ -178,10 +178,11 @@ h3 {
 .input-outer {
     display: flex;
     padding: 1rem;
+    justify-content: center;
 }
 
 .contact-input {
-    width: 40%;
+    width: 30%; 
     margin: 0 5%;
 }
 
@@ -196,8 +197,7 @@ h3 {
 }
 
 .contact-message {
-    margin: auto;
-    width: 90%;
+    width: 70%;
 }
 
 .contact-message textarea {
@@ -232,7 +232,7 @@ h3 {
 }
 
 .contact-table {
-    width: 80%;
+    width: 70%;
     border-collapse: collapse;
     text-align: center;
     margin: 1rem auto 0 auto;
