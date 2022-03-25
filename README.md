@@ -85,6 +85,18 @@ Muscleverse Gym is a gym located in Dublin, Ireland. The site is targeted toward
 
   ![](./assets/images/responsivetwo.png), ![](./assets/images/responsiveone.png)
 
+- __User Goal Testing__
+
+  - A first time site user looking to become a gym member. 
+    - Upon entry to the site the user will see a clearly layed out navigation bar with the option of joining the gym today. The Join today option is also given to the user with the Join today button on the site's hero image. 
+    - Once either join today button is selected by the user they are re-directed in a seperate tab to the join today form allowing them switch freely back to the home page in the seperate tab. 
+    - The join form is clear, listing all of the information the user is required to provide in order to join. The 12 month gym membership price is listed in bold text at the top of this form. 
+
+  - A returning user looking for the class timetable. 
+    - Upon entry to the site the user will see a clearly layed out navigation bar with the option of class timetable. Upon selection of this button the user will be re-directed to a seperate class timetable page in a new tab. 
+    - The class timetable is clear and concise providing the user with the day and time each class will start allowing them to schedule their gym session around the class times.
+    - If the user is unsure of the of what takes place in each class they can view the table below the class timetable which provides a brief description of each class. 
+
 ## Deployment
 
   - The site was deployed to GitHub pages. The live link can can be found here - https://evan2022.github.io/html-css-first-project/
@@ -115,4 +127,5 @@ Muscleverse Gym is a gym located in Dublin, Ireland. The site is targeted toward
 
   - Footer code mostly copied from the Love Running Code Institue projects with minor sizing changes and different hover effects. 
   - The country field select options in the join today form were taken copied https://www.technicalkeeda.com/html-tutorials/all-countries-drop-down-list-in-html. 
+  - Onfocus attribute in date of birth filed in join today form was copied from https://www.geeksforgeeks.org/how-to-set-placeholder-value-for-input-type-date-in-html-5/?ref=lbp
 

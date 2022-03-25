@@ -59,8 +59,9 @@
                             <input id="password2" type="password" name="password_2" placeholder="Confirm Password*" class="double" required>
                         </div>
                         <div>
+                            <!-- onfocus attribute was copied from https://www.geeksforgeeks.org/how-to-set-placeholder-value-for-input-type-date-in-html-5/?ref=lbp-->
                             <label for="birthday"></label>
-                            <input id="birthday" type="date" name="date_birth" class="double" required>
+                            <input id="birthday" type="text" placeholder="Date of Birth*" onfocus="(this.type='date')" name ="date_birth" class="double" required>
                     
                             <label for="phone"></label>
                             <input id="phone" type="tel" name="phone_number" placeholder="Phone No*" class="double" required>
@@ -356,7 +357,7 @@
                         </div>
                         <div>
                             <label for="card-number"></label>
-                            <input id="card-number" type="text" name="card_number" placeholder="Card Number*" class="double" required>
+                            <input id="card-number" type="tel" name="card_number" placeholder="Card Number*" pattern="[0-9]{13,16}" class="double" required>
                         
                             <label for="CVN"></label>
                             <input id="CVN" type="text" name="CVN" placeholder="CVN" class="double" required maxlength="4">
